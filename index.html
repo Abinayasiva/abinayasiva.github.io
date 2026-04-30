@@ -300,7 +300,7 @@
     </div>
     <p class="hero-desc">
       Expert in <strong>Enterprise Workflow Automation and Regulatory Systems Modernization</strong>, 
-      with 13+ years building HIPAA-compliant, audit-ready platforms for regulated federal environments. 
+      with 15+ years building HIPAA-compliant, audit-ready platforms for regulated federal environments. 
       Creator of OrgLimit Monitor on Salesforce AppExchange. IEEE-published researcher. Peer reviewer for 
       IEEE, JMIR, Springer Nature, and Elsevier.
     </p>
@@ -319,7 +319,11 @@
         <div class="hstat-l">Orgs Using OrgLimit Monitor</div>
       </div>
       <div class="hstat">
-        <div class="hstat-n">9+</div>
+        <div class="hstat-n">15+</div>
+        <div class="hstat-l">Years in Regulated Enterprise Systems</div>
+      </div>
+      <div class="hstat">
+        <div class="hstat-n">10+</div>
         <div class="hstat-l">IEEE & Springer Publications</div>
       </div>
       <div class="hstat">
@@ -350,10 +354,10 @@
       </div>
       <div class="award-item">
         <div class="award-accent"></div>
-        <div class="award-year">2026 · Nominee</div>
+        <div class="award-year">2026 · Finalist</div>
         <span class="award-icon">🌟</span>
-        <div class="award-title">Women in Tech Global Awards</div>
-        <div class="award-org">WomenTech Network — Recognized for leadership in cloud development and federal healthcare platform delivery processing millions of regulatory dispute transactions.</div>
+        <div class="award-title">Women in Tech Global Awards — Software Engineer of the Year</div>
+        <div class="award-org">WomenTech Network — Selected as a Finalist for Software Engineer of the Year, recognized for leadership in cloud development and federal healthcare platform delivery processing millions of regulatory dispute transactions.</div>
       </div>
       <div class="award-item">
         <div class="award-accent"></div>
@@ -493,12 +497,12 @@
         <div class="section-label">Original Contribution</div>
         <h2>OrgLimit <em>Monitor</em></h2>
       </div>
-      <p class="section-desc">An independently developed, published, and award-recognized Salesforce AppExchange application solving a pervasive operational problem for 100+ organizations worldwide.</p>
+      <p class="section-desc">An independently developed, published, and award-recognized Salesforce AppExchange application — installed by 100+ organizations to solve a critical operational visibility problem in enterprise Salesforce environments.</p>
     </div>
     <div class="orglimit-grid reveal">
       <div>
         <p style="font-size:.95rem;color:var(--mid);line-height:1.85;margin-bottom:1.5rem">
-          OrgLimit Monitor provides real-time alerts, proactive threshold monitoring, and on-demand insights for Salesforce org limits — a risk affecting every one of the 150,000+ companies running on the Salesforce platform. Conceived, architected, and shipped as a solo product.
+          OrgLimit Monitor provides real-time alerts, proactive threshold monitoring, and on-demand insights for Salesforce org limits — a pervasive operational risk in enterprise Salesforce environments. Conceived, architected, and shipped as a solo AppExchange product.
         </p>
         <p style="font-size:.95rem;color:var(--mid);line-height:1.85;margin-bottom:2rem">
           Recognized as part of the <strong>2026 FORUM Disruptive Technology Award</strong> at the Centers for Medicare &amp; Medicaid Services (CMS), and covered independently by the <em>International Business Times (UK)</em>.
@@ -514,31 +518,31 @@
         <a class="btn-primary" href="https://appexchange.salesforce.com/appxListingDetail?listingId=daa4f8c0-64a9-4454-bec5-b604c032a37c" target="_blank" rel="noopener">View on AppExchange →</a>
         <div class="orglimit-stats">
           <div class="os-item"><div class="os-n">100+</div><div class="os-l">Organizations Installed</div></div>
-          <div class="os-item"><div class="os-n">150K+</div><div class="os-l">Orgs in Target Market</div></div>
+          <div class="os-item"><div class="os-n">2026</div><div class="os-l">FORUM Award Recipient</div></div>
         </div>
       </div>
-      <div class="orglimit-visual">
-        <span class="ov-cm">// OrgLimit Monitor — Apex Core</span><br/>
-        <span class="ov-kw">public class</span> OrgLimitAlert {<br/>
-        &nbsp;&nbsp;<br/>
-        &nbsp;&nbsp;<span class="ov-kw">static final</span> Decimal THRESHOLD = 80.0;<br/>
-        &nbsp;&nbsp;<br/>
-        &nbsp;&nbsp;<span class="ov-kw">@future</span><br/>
-        &nbsp;&nbsp;<span class="ov-kw">public static void</span> checkLimits() {<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;Map&lt;String, OrgLimit&gt; limits<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= OrgLimits.getMap();<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="ov-kw">for</span> (String key : limits.keySet()) {<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OrgLimit lim = limits.get(key);<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decimal pct = getUsagePct(lim);<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ov-kw">if</span> (pct &gt; THRESHOLD) {<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AlertService.notify(<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lim, pct<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;}<br/>
-        &nbsp;&nbsp;}<br/>
-        }
+      <!-- Architecture diagram replacing code snippet -->
+      <div style="background:var(--off);border:1px solid var(--border);border-radius:8px;padding:2rem;font-family:'DM Mono',monospace;font-size:.75rem;color:var(--mid)">
+        <div style="font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:1.5rem">Platform Architecture</div>
+        <div style="display:flex;flex-direction:column;gap:.75rem">
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:.85rem 1rem;border-left:3px solid var(--accent)">
+            <div style="font-size:.65rem;color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem">Input</div>
+            <div style="color:var(--text);font-weight:600">Salesforce Org Limits API</div>
+            <div style="font-size:.7rem;color:var(--muted);margin-top:.2rem">Real-time platform usage data</div>
+          </div>
+          <div style="text-align:center;color:var(--muted);font-size:.85rem">↓ Scheduled · Event-Driven</div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:.85rem 1rem;border-left:3px solid var(--gold)">
+            <div style="font-size:.65rem;color:var(--gold);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem">Processing</div>
+            <div style="color:var(--text);font-weight:600">Threshold Analysis Engine</div>
+            <div style="font-size:.7rem;color:var(--muted);margin-top:.2rem">Configurable alert rules · Usage trend tracking</div>
+          </div>
+          <div style="text-align:center;color:var(--muted);font-size:.85rem">↓ Alert Triggered</div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:.85rem 1rem;border-left:3px solid var(--accent2)">
+            <div style="font-size:.65rem;color:var(--accent2);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.2rem">Output</div>
+            <div style="color:var(--text);font-weight:600">Proactive Admin Notification</div>
+            <div style="font-size:.7rem;color:var(--muted);margin-top:.2rem">Email · Dashboard · Custom alerts</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -607,7 +611,7 @@
         <div>
           <div class="speak-title">Federal Healthcare Regulatory Platform — Technical Lead</div>
           <div class="speak-event">General Dynamics Information Technology (GDIT)</div>
-          <div class="speak-desc">Leads technical implementation of a HIPAA-compliant Salesforce platform for federal healthcare regulatory workflows — processing 6M+ disputes and serving as critical U.S. healthcare compliance infrastructure.</div>
+          <div class="speak-desc">Architected a HIPAA-compliant, high-availability Salesforce platform designed to handle 6M+ federal healthcare regulatory dispute transactions — built for scalability, audit readiness, and strict regulatory compliance in a federal government environment.</div>
         </div>
       </div>
       <div class="speak-item">
@@ -675,7 +679,7 @@
         <div class="section-label">Career</div>
         <h2>Executive <em>Experience</em></h2>
       </div>
-      <p class="section-desc">13+ years of progressive technical leadership across federal government, consulting, and enterprise Salesforce architecture in regulated industries.</p>
+      <p class="section-desc">15+ years of progressive technical leadership across federal government, consulting, and enterprise Salesforce architecture in regulated industries.</p>
     </div>
     <div class="xp-list reveal">
       <div class="xp-item">
@@ -683,7 +687,7 @@
         <div>
           <div class="xp-title">Cloud Development Manager</div>
           <div class="xp-company">General Dynamics Information Technology (GDIT)</div>
-          <div class="xp-desc">Leads Salesforce development delivery, technical design, integration architecture, code quality, and release governance for regulated federal enterprise systems processing 6M+ healthcare regulatory dispute transactions.</div>
+          <div class="xp-desc">Architected and leads the technical implementation of a HIPAA-compliant Salesforce platform for federal healthcare regulatory workflows — designed to handle 6M+ dispute transactions with high availability, audit traceability, and regulatory compliance at its core.</div>
         </div>
       </div>
       <div class="xp-item">
