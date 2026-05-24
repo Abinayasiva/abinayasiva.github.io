@@ -93,7 +93,27 @@
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;font-size:16px}
-    body{font-family:'DM Sans',sans-serif;background:var(--white);color:var(--text);line-height:1.7;overflow-x:hidden}
+    body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--white);
+  color:var(--text);
+  line-height:1.7;
+  overflow-x:hidden;
+  position:relative;
+}
+    body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  right:0;
+  width:55vw;
+  height:100vh;
+  background:url("blue-wave-bg.png") no-repeat right top;
+  background-size:cover;
+  opacity:.08;
+  pointer-events:none;
+  z-index:-1;
+}
     a{color:inherit;text-decoration:none}
     img{max-width:100%}
 
@@ -113,16 +133,32 @@
 
     /* ── HERO ── */
     #hero{
-      min-height:100vh;display:flex;flex-direction:column;justify-content:center;
-      padding:8rem 2rem 5rem;
-      background:var(--off);
-      position:relative;overflow:hidden;
-    }
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:8rem 2rem 5rem;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(250,250,248,0.98) 0%,
+      rgba(250,250,248,0.94) 42%,
+      rgba(250,250,248,0.72) 100%
+    ),
+    url("blue-wave-bg.png");
+  background-size:cover;
+  background-position:right top;
+  background-repeat:no-repeat;
+  position:relative;
+  overflow:hidden;
+}
     .hero-lines{
-      position:absolute;inset:0;pointer-events:none;
-      background-image:repeating-linear-gradient(0deg,transparent,transparent 79px,var(--border) 80px);
-      opacity:.5;
-    }
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:repeating-linear-gradient(0deg,transparent,transparent 79px,var(--border) 80px);
+  opacity:.18;
+}
     .hero-inner{max-width:1200px;margin:0 auto;width:100%;position:relative;z-index:1}
     .hero-eyebrow{
       display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem;
