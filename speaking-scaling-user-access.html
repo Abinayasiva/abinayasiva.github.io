@@ -4,10 +4,142 @@
   <meta charset="UTF-8">
   <title>Abinaya Mettupatti Sivagnanam | Salesforce Trailblazer Speaker | Scaling User Access</title>
   <meta name="description" content="Abinaya Mettupatti Sivagnanam presented Scaling User Access: Automated Onboarding with User Access Policies and Custom Permissions for the Salesforce Trailblazer Community.">
+<style>
+  :root{
+    --white:#ffffff;
+    --text:#1a1612;
+    --mid:#5c5650;
+    --accent:#1a4fa0;
+    --border:#e8e4de;
+    --r:4px;
+  }
+
+  body{
+    margin:0;
+    padding-top:76px;
+    font-family:Arial, sans-serif;
+    color:var(--text);
+    line-height:1.7;
+  }
+
+  nav{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:100;
+    background:rgba(255,255,255,0.96);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+  }
+
+  .nav-inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 2rem;
+    min-height:68px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1.5rem;
+  }
+
+  .nav-logo{
+    font-size:1.25rem;
+    font-weight:600;
+    color:var(--text);
+    text-decoration:none;
+  }
+
+  .nav-logo span{
+    color:var(--accent);
+  }
+
+  .nav-links{
+    display:flex;
+    gap:.25rem;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+
+  .nav-links a{
+    font-size:.78rem;
+    font-weight:600;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:var(--mid);
+    padding:.5rem .75rem;
+    border-radius:var(--r);
+    text-decoration:none;
+    transition:all .2s;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active{
+    color:var(--accent);
+    background:rgba(26,79,160,0.06);
+  }
+
+  .nav-badge{
+    color:#ffffff !important;
+    background:var(--accent);
+    padding:.35rem .75rem !important;
+    border-radius:2px;
+  }
+
+  main{
+    max-width:1100px;
+    margin:0 auto;
+    padding:2rem;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  @media(max-width:900px){
+    .nav-inner{
+      flex-direction:column;
+      align-items:flex-start;
+      padding:1rem 1.25rem;
+    }
+
+    body{
+      padding-top:150px;
+    }
+
+    .nav-links{
+      gap:.15rem;
+    }
+
+    .nav-links a{
+      font-size:.72rem;
+      padding:.35rem .5rem;
+    }
+  }
+</style>
 </head>
 
 <body>
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">Abinaya <span>Sivagnanam</span></a>
 
+    <div class="nav-links">
+      <a href="/#awards">Awards</a>
+      <a href="/#publications">Publications</a>
+      <a href="/#orglimit">Product</a>
+      <a href="/#judging">Peer Review</a>
+      <a href="/#speaking" class="active">Speaking</a>
+      <a href="/#expertise">Expertise</a>
+      <a href="/#experience">Experience</a>
+      <a href="/#contact">Contact</a>
+      <a href="https://scholar.google.com/citations?user=yBGY1B4AAAAJ" target="_blank" rel="noopener" class="nav-badge">Scholar</a>
+    </div>
+  </div>
+</nav>
+  <main>
   <h1>Abinaya Mettupatti Sivagnanam – Salesforce Trailblazer Community Speaker</h1>
 
   <p>
@@ -69,6 +201,6 @@
       Supporting proof of Abinaya Mettupatti Sivagnanam’s Salesforce Trailblazer Community speaking engagement.
     </figcaption>
   </figure>
-
+</main>
 </body>
 </html>
