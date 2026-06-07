@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://abinayasiva.github.io/sitemap.xml
