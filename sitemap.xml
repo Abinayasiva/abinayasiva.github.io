@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://abinayasiva.github.io/</loc>
-  </url>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
   <url>
     <loc>https://abinayasiva.github.io/speaking-scaling-user-access.html</loc>
+
+    <image:image>
+      <image:loc>https://abinayasiva.github.io/assets/images/speaking/abinaya-mettupatti-sivagnanam-trailblazer-speaker-proof.jpg</image:loc>
+      <image:title>Abinaya Mettupatti Sivagnanam Salesforce Trailblazer Community Speaker</image:title>
+      <image:caption>Abinaya Mettupatti Sivagnanam speaking at the Salesforce Trailblazer Community session on Scaling User Access.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://abinayasiva.github.io/assets/images/speaking/abinaya-mettupatti-sivagnanam-salesforce-trailblazer-event.png</image:loc>
+      <image:title>Salesforce Trailblazer Community Event for Scaling User Access</image:title>
+      <image:caption>Salesforce Trailblazer Community event page for the Scaling User Access session.</image:caption>
+    </image:image>
+
   </url>
 </urlset>
